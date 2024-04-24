@@ -1,0 +1,57 @@
+@use 'variaveis';
+
+.hero {
+    padding: 5.1vw;
+    min-height: 72vh;
+    background-image: url(../images/hero_desktop.jpeg);
+    text-align: center;
+    background-size: cover;
+
+    &__content{
+        max-width: 576px;
+
+        &__branding {
+            max-width: 288px;
+            margin: 0 auto 34px;
+        }
+
+        .title--small {
+            margin-bottom: 58px;
+        }
+
+        p {
+            margin-bottom: 18px;
+
+            &:last-child {
+                margin-top: 54px;
+            }
+        }
+
+        &__combos {
+            display: flex;
+            justify-content: space-between;
+            
+
+            &__combo {
+                width: calc(50% - 10px);
+
+                img {
+                    max-height: 54px;
+                }
+
+                button {
+                    display: block;
+                    width: 90%;
+                    height: 54px;
+                    font-size: 16px;
+                    color: variaveis.$corTextoSecundario;
+                    background-color: #6421ff;
+                    text-transform: uppercase;
+                    border-radius: 4px;
+                    margin-top: 1vw;
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+}
